@@ -1,0 +1,41 @@
+<%- include('partials/header.ejs') %>
+
+<h1>Contact</h1>
+<p><%=contactPara%></p>
+<form class="row g-3" method="post" action="/contact">
+    <div class="col-md-6">
+        <label for="inputEmail4" class="form-label">Name</label>
+        <input type="text" class="form-control" id="inputEmail4" name="uname">
+      </div>
+      <div class="col-md-6">
+        <label for="inputEmail4" class="form-label">Age</label>
+        <input type="number" class="form-control" id="inputEmail4" name="uage">
+      </div>
+    <div class="col-md-6">
+      <label for="inputEmail4" class="form-label">Email</label>
+      <input type="email" class="form-control" id="inputEmail4" name="mail">
+    </div>
+    <div class="col-md-6">
+      <label for="inputPassword4" class="form-label">Comments</label>
+      <textarea name="ucomment" class="form-control" id="exampleFormControlTextarea1" rows="1"  required ></textarea>
+    </div>
+    <div class="col-12">
+      <label for="inputAddress" class="form-label">Address</label>
+      <input type="text" name="uaddress" class="form-control" id="inputAddress" placeholder="1234 Main St">
+    </div>
+    
+
+    <div class="col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck">
+        <label class="form-check-label" for="gridCheck">
+          Check me out
+        </label>
+      </div>
+    </div>
+    <div class="col-12">
+      <button type="submit" class="btn btn-primary">Sign in</button>
+    </div>
+  </form>
+
+<%- include('partials/footer.ejs') %>

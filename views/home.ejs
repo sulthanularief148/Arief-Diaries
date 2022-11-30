@@ -1,0 +1,46 @@
+
+    <%- include('partials/header') %>
+    <div class="loader"></div>
+    <body class="home-bg">
+      <div class="card" style="margin-top:15px;">
+        <div class="card-header">
+          <h1 class="fonts">Home</h1>
+        </div>
+        <div class="card-body">
+          <h2 class="fonts">Why Write About Poetry?</h2>
+          <p class="parafonts">There are many reasons an instructor might ask you to write about literature in a composition classroom. For one, learning to write about literature is an engaging way to learn to make a text-based argument. Secondly, writing about literature can help you better understand what you are reading. Learning to read literature critically requires the same steps as learning to read academic texts, like looking up words you don’t understand, researching context, asking questions, and taking notes. Last, but certainly not least, writing about literature can help you to enjoy it more!
+          Generally, English teachers begin introducing this process to students with the genre of poetry. Poetry tends to be shorter than other genres, like short fiction and drama. Because of this, it can be easier to digest and analyze.</p>
+          <p class="parafonts"><%=startingContent%></p>
+        </div>
+      </div>
+       <div class="row">
+      <%  posts.forEach(function(post) {%>
+        
+          <div class="card col-md-4" style="margin: 15px 0px 0px 0px; padding: 0px;">
+            <div >
+
+            
+            <div class="card-header">
+              <h1 class="fonts "><%=post.title%></h1>
+              
+            </div>
+            <div class="card-body">
+              <p class="parafonts"><%=post.content.substring(0, 100) + "..." %>
+               <a href="/posts/<%=post.title%>">Readmore</a></p>
+            </div>
+          </div>
+          </div> 
+    
+          
+       <%  });%>
+      
+       
+      </div>
+      
+ 
+  
+</body>
+<%- include('partials/footer') %>
+
+</html>
+ 
