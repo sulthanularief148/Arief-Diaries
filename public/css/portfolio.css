@@ -1,0 +1,146 @@
+
+#portfolio-banner {
+    position: relative;
+}
+.card {
+ opacity: 0.9;
+}
+
+.portfolio-bannerImage{
+    height: 400px;
+    width: 100%;
+}
+.portfolio-bannerHead {
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    animation: animtext 4s steps(80, end); 
+    transition: all cubic-bezier(0.1, 0.7, 1.0, 0.1);
+
+}
+@keyframes animtext { 
+    from {
+        width: 0;
+       transition: all 2s ease-in-out;
+    } 
+  }
+
+  .subtext {
+    color: white;
+    text-align: center;
+    font-size: 50px;
+  }
+.portfolio-description {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    color: white;
+}
+.portfolio-bannerButton {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    border: 1px solid grey;
+    color: white;
+}
+
+.portfolio-nav {
+
+    top: 1%;
+    left: 5%;
+}
+.port-nav {
+    /* padding: 55px; */
+    text-decoration: none;
+    color: white;
+    margin-left: 7px;
+    opacity: 0.6;
+    
+}
+a.nav-link.text-white.port-nav {
+    padding-left: 60px;
+}
+.inner {
+    overflow: hidden;
+  }
+.inner img {
+    transition: all 1.5s ease;
+    width: 300px;
+    height: 200px;
+  }
+.inner:hover img {
+    transform: scale(1.2);
+  }
+  
+/* #bannerVideo {
+    
+   height: 300px;
+   max-width: 100%; 
+    
+  } */
+
+
+/* Media queries */
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+and (orientation : portrait) {
+    p.portfolio-description{
+        top: 70%;
+        left: 8%;
+    }
+    h1.portfolio-bannerHead {
+        top: 62%;
+        font-size: 23px;;
+    }
+    .portfolio-bannerButton{
+        top: 82%;
+        left: 8%;
+    }
+    button.navbar-toggler.port {
+        background-color: white;
+    }
+
+}
+
+
+/* Galaxy Fold */
+@media only screen 
+and (min-device-width : 200px) 
+and (max-device-width : 667px) 
+and (orientation : portrait) {
+
+    p.portfolio-description {
+        left: 6%;
+        top: 70%; 
+    }
+    .portfolio-bannerButton{
+        top: 82%;
+        left: 20%;
+    }
+    h1.portfolio-bannerHead {
+        top: 64%;
+        font-size: 17px;;
+    }
+    button.navbar-toggler.port {
+        background-color: white;
+    }
+}
+
+/* Tablet */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+    .portfolio-bannerButton {
+         top: 73%;
+    }
+    button.navbar-toggler.port {
+        background-color: white;
+    }
+}

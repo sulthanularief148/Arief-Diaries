@@ -1,46 +1,153 @@
+<!-- Header section -->
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+<link rel="stylesheet" href="/css/styles.css">
+<link rel="stylesheet" href="/css/contact.css">
+<script src="/js/index.js"></script>
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 
-    <%- include('partials/header') %>
-    <div class="loader"></div>
-    <body class="home-bg">
-      <div class="card" style="margin-top:15px;">
-        <div class="card-header">
-          <h1 class="fonts">Home</h1>
-        </div>
-        <div class="card-body">
-          <h2 class="fonts">Why Write About Poetry?</h2>
-          <p class="parafonts">There are many reasons an instructor might ask you to write about literature in a composition classroom. For one, learning to write about literature is an engaging way to learn to make a text-based argument. Secondly, writing about literature can help you better understand what you are reading. Learning to read literature critically requires the same steps as learning to read academic texts, like looking up words you don’t understand, researching context, asking questions, and taking notes. Last, but certainly not least, writing about literature can help you to enjoy it more!
-          Generally, English teachers begin introducing this process to students with the genre of poetry. Poetry tends to be shorter than other genres, like short fiction and drama. Because of this, it can be easier to digest and analyze.</p>
-          <p class="parafonts"><%=startingContent%></p>
-        </div>
-      </div>
-       <div class="row">
-      <%  posts.forEach(function(post) {%>
-        
-          <div class="card col-md-4" style="margin: 15px 0px 0px 0px; padding: 0px;">
-            <div >
+  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.css" rel="stylesheet"/>
+  <script type="text/javascript"src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.js"></script> -->
+<!--Google fonts-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Stylish&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+</script>
+<!-- Header section end -->
 
-            
-            <div class="card-header">
-              <h1 class="fonts "><%=post.title%></h1>
+<body class="home-bg">
+
+
+
+
+  <!-- Home page Banner section -->
+
+  <div style="position: relative;">
+    <img src="images/love.jpg" width="100%" height="600px" class=" home-image">
+    <button type="submit"  class="btn btn-danger home-bannerButton" >Get Started</button>
+    <h1 class="header-txt" id="head"><span>Arief</span> <span>Diaries</span></h1>
+    <p class="home-bannerDescription fonts">Reading poetry is an adventure in renewal, a creative act, a perpetual
+      beginning, a rebirth of wonder. Poetry is a deal of joy and pain and wonder, with a dash of the dictionary. If I
+      read a book and it makes my whole body so cold no fire can ever warm me, I know that is poetry.</p>
+    <p class="mob-description">Love is Everything</p>
+    <!-- Home page Banner Navigation Start -->
+
+
+
+
+
+
+
+
+
+
+    <div style="position: absolute;" class="home-navMenu">
+      <nav class="navbar navbar-expand-lg h5 ">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse fonts" id="navbarTogglerDemo01" style="margin-left: 20px;">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active hm-nav" style="padding-left: 0px;">
+              <div class="inner">
+                <a class="nav-link text-white home-navLink" href="/">Home<span class="sr-only"></span></a>
+              </div>
               
-            </div>
-            <div class="card-body">
-              <p class="parafonts"><%=post.content.substring(0, 100) + "..." %>
-               <a href="/posts/<%=post.title%>">Readmore</a></p>
-            </div>
-          </div>
-          </div> 
-    
-          
-       <%  });%>
-      
-       
+            </li>
+            <li class="nav-item hm-nav">
+              <div class="inner">
+                <a class="nav-link text-white home-navLink" href="/about">About</a>
+              </div>
+
+            </li>
+            <li class="nav-item hm-nav">
+              <div class="inner">
+                <a class="nav-link text-white home-navLink" href="/compose" tabindex="-1">Compose</a>
+              </div>
+
+            </li>
+            <li class="nav-item hm-nav">
+              <div class="inner">
+                <a class="nav-link text-white home-navLink" href="/compose" tabindex="-1">Quotes</a>
+              </div>
+
+            </li>
+            <li class="nav-item hm-nav">
+              <div class="inner">
+                <a class="nav-link text-white home-navLink" href="/compose" tabindex="-1">Articles</a>
+              </div>
+
+            </li>
+            <li class="nav-item hm-nav">
+              <div class="inner">
+                <a class="nav-link text-white home-navLink" href="/contact" tabindex="-1">Contact</a>
+              </div>
+
+            </li>
+            <li class="nav-item hm-nav">
+              <div class="inner">
+                <a class="nav-link text-white home-navLink" href="/contact" tabindex="-1">Blog</a>
+              </div>
+
+            </li>
+          </ul>
+
+        </div>
+      </nav>
+    </div>
+    <!-- Home page Banner Navigation End -->
+  </div>
+  <!-- Home page Banner section end -->
+
+  <!-- Below code is Homw page static Content, we can edit and madify the content here -->
+  <div class="card shadow-lg" style="margin: 20px;">
+    <div class="card-header parafonts">
+      <h1 class="fonts">Home</h1>
+    </div>
+    <div class="card-body post-card">
+      <h2 class="fonts">Why Write About Poetry?</h2>
+      <p class="parafonts">There are many reasons an instructor might ask you to write about literature in a composition
+        classroom. For one, learning to write about literature is an engaging way to learn to make a text-based
+        argument. Secondly, writing about literature can help you better understand what you are reading. Learning to
+        read literature critically requires the same steps as learning to read academic texts, like looking up words you
+        don’t understand, researching context, asking questions, and taking notes. Last, but certainly not least,
+        writing about literature can help you to enjoy it more!
+        Generally, English teachers begin introducing this process to students with the genre of poetry. Poetry tends to
+        be shorter than other genres, like short fiction and drama. Because of this, it can be easier to digest and
+        analyze.</p>
+      <p class="parafonts"><%=startingContent%></p>
+    </div>
+  </div>
+  <!-- Home page static contetnt End here -->
+
+  <!-- Below cards refer to Home page Dynamic content. When we post the content from compose page it will automatically add to post page and home page -->
+  <div class="row" style="margin: 20px;">
+    <%  posts.forEach(function(post) {%>
+    <div class="card col-md-12 shadow" style="margin: 15px 0px 0px 0px; padding: 0px;">
+      <div class="card-header">
+        <h1 class="fonts"><%=post.title%></h1>
       </div>
-      
- 
-  
+      <div class="card-body">
+        <p class="parafonts"><%=post.content.substring(0, 100) + "..." %>
+          <a href="/posts/<%=post._id%>">Readmore</a></p>
+      </div>
+    </div>
+    <%  });%>
+  </div>
+  <!-- Dyamic contents card section End here -->
+
+  <!-- Below code refer to Home Page Footer section. I woould create separate footer section for home page -->
+  <%- include('partials/footer.ejs') %>
+  <!-- Home page footer section End here -->
+
 </body>
-<%- include('partials/footer') %>
 
 </html>
- 

@@ -1,0 +1,45 @@
+/* .contact-image {
+    opacity: 0.8;
+    
+} */
+.contact-btn {
+    position: absolute;
+    top: 10;
+    right: 25;
+}
+.contact-nav {
+    position: absolute;
+    top: 10;
+    left: 25%;
+    padding: 5px;
+  
+} 
+.header-txt {
+    font-family: 'Stylish', sans-serif;
+    position: absolute;
+    top: 12%;
+    left: 52%;
+    transform: translate(-50%, 50%);
+    color: white;
+
+}
+#contact-section p {
+    position: absolute;
+    top: 42%;
+    left: 22%;
+    text-align: center;
+    color: white;
+    
+}
+.contact-navtxt {
+    color: white;
+}
+.contact-head {
+    position: absolute;
+    top: 10;
+    left : 25;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block !important;
+}

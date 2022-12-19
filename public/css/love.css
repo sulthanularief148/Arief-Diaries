@@ -1,0 +1,33 @@
+.love-headtxt {
+    position: absolute;
+    top: 10px;
+    left: 25px;
+    color: white;   
+    font-family: 'Stylish', sans-serif;
+}
+.love-txt {
+    font-family: 'Stylish', sans-serif;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    color: white;
+    font-size: 55px;
+
+}
+.love-txtPara {
+    font-family: 'Stylish', sans-serif;
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    color: white;
+    text-align: center;
+
+}
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    .love-txt {
+      top: 27%;
+      left: 50%;
+    }
+  }
