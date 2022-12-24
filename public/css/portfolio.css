@@ -83,6 +83,10 @@ a.nav-link.text-white.port-nav {
     
   } */
 
+  .centerdtxt {
+    text-align: -webkit-center;
+  }
+
 
 /* Media queries */
 
@@ -105,6 +109,10 @@ and (orientation : portrait) {
     button.navbar-toggler.port {
         background-color: white;
     }
+   /* html{
+        overflow-x: hidden;
+    } */
+   
 
 }
 
@@ -130,6 +138,9 @@ and (orientation : portrait) {
     button.navbar-toggler.port {
         background-color: white;
     }
+    html{
+        overflow-x: hidden;
+    }
 }
 
 /* Tablet */
@@ -142,5 +153,8 @@ and (orientation : portrait) {
     }
     button.navbar-toggler.port {
         background-color: white;
+    }
+    .card {
+        width: 15rem !important;
     }
 }

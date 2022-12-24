@@ -2,13 +2,15 @@
     position: absolute;
     top: 15%;
     left: 35%;
-
 }
 .compose-form {
     position: absolute;
     width: 80%;
-    margin: 20px;
+    margin: 50px;
     left: 10%;
     top: 20%;
 
+}
+.compose-container {
+    background-image: url("/images/book.jpg");
 }

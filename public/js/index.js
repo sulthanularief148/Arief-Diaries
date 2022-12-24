@@ -1,9 +1,3 @@
-// $("#carousel-slider").slick({
-//     arrows: false,
-//     infinite: true,
-//     slidesToShow: 1,
-//     slidesToScroll: 1,
-//     autoplay: true,
-//     autoplaySpeed: 1500,
-//     mobileFirst: true
-// });
+ function rangeSlide(value) {
+     document.getElementById('rangeValue').innerHTML = value;
+ }
